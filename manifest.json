@@ -3,14 +3,9 @@
     "name": "yemter",
     "version": "1.0",
     "description": "yemter",
-    
-        "content_scripts": [
-          {
-            "js": ["scripts/content.js"],
-            "matches": [
-                "https://*/*"
-            ]
-          }
-        ]
+    "background": {
+        "service_worker": "scripts/content.js"
+    },
+    "permissions": ["activeTab", "scripting"]
       
   }
